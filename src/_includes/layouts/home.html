@@ -4,5 +4,8 @@
 <article>
     <h1>{{ title }}</h1>
     {{ content | safe }}
+    <div class="[ intro__media ]">
+        <img class="[ intro__image ]" src="{{ intro.image }}" alt="{{ intro.imageAlt }}" />
+    </div>
 </article>
 {% endblock %}
