@@ -4,10 +4,11 @@
     </a>
     <nav aria-label="primary">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/ripple-centre">Ripple Centre</a></li>
-            <li><a href="contact">Contact</a></li>
+            {% for item in navigation.items %}
+            <li>
+                <a href="{{ item.url }}">{{ item.text }}</a>
+            </li>
+            {% endfor %}
         </ul>
     </nav>
 </header>
