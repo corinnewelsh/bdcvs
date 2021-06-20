@@ -1,14 +1,22 @@
-<a href="#main-content">Skip to content</a>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header role="banner">
     <a href="/" aria-label="{{ site.name }} - home">
     </a>
-    <nav aria-label="primary">
-        <ul>
+    <nav class="navbar has-shadow" aria-label="primary">
+        <!-- bdcvs logo -->
+        <div class="navbar-brand px-1">
+            <a href="/" aria-label="BDCVS - home">
+                <img src="../../images/bdcvs_logo_colour_small_672x456.png" alt="BDCVS logo" style="max-height: 120px">
+            </a>
+        </div>
+        <ul class="navbar-menu">
+            <div class="navbar-end px-6">
             {% for item in navigation.items %}
-            <li>
+            <li class="navbar-item is-size-5">
                 <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
             </li>
             {% endfor %}
+            </div>
         </ul>
     </nav>
 </header>
