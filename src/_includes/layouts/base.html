@@ -5,12 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ '_includes/css/styles.css' | url }}" />
+    
+    <link rel="stylesheet" href="{{ '/_includes/css/styles.css' | url }}" />
 </head>
 <body>
     {% include "partials/site-header.html" %}
-    <main tabindex="-1" id="main-content">{% block content %}{% endblock %}</main>
+    
+    <main tabindex="-1" id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+    
     {% include "partials/site-footer.html" %}
 </body>
 </html>
