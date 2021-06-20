@@ -1,7 +1,6 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header role="banner">
-    <a href="/" aria-label="{{ site.name }} - home">
-    </a>
+    <a href="/" aria-label="{{ site.name }} - home"></a>
     <nav class="navbar has-shadow" aria-label="primary">
         <!-- bdcvs logo -->
         <div class="navbar-brand px-1">
@@ -11,11 +10,11 @@
         </div>
         <ul class="navbar-menu">
             <div class="navbar-end px-6">
-            {% for item in navigation.items %}
-            <li class="navbar-item is-size-5">
-                <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-            </li>
-            {% endfor %}
+                {% for item in navigation.items %}
+                <li class="navbar-item is-size-5">
+                    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+                </li>
+                {% endfor %}
             </div>
         </ul>
     </nav>
