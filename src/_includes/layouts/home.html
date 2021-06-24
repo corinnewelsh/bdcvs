@@ -1,11 +1,33 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<article>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
-    <div class="[ intro__media ]">
-        <img class="[ intro__image ]" src="{{ intro.image }}" alt="{{ intro.imageAlt }}" />
+<section class="section px-6">
+    <h1 class="is-size-1 has-text-danger">{{ title }}</h1>
+    <div class="columns py-6 is-8 is-variable">
+        <div class="column is-three-quarters">
+            <div class="columns is-6 is-variable is-multiline">
+                {% for news in collections.news %}
+                <div class="column is-half">
+                    <div class="content">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{{ news.data.image }}" alt="{{ news.data.imageAlt }}" />
+                            </div>
+                            <div class="card-header-title is-centered">
+                                <h2 class="is-size-4">{{ news.data.title }}</h2>
+                            </div>
+                            <div class="card-content">
+                                {{ news.templateContent | safe }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="column is-one-quarter">
+            <a class="twitter-timeline" data-height="2000" data-theme="light" data-lang="en" data-dnt="true" href="https://twitter.com/BD_CVS?ref_src=twsrc%5Etfw">Tweets by BD_CVS</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </div>
-</article>
+</section>
 {% endblock %}

@@ -1,2 +1,13 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma.sass";
+
+.skip-link {
+    position: absolute;
+    z-index: 99;
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+}
+
