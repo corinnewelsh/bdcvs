@@ -19,5 +19,12 @@ module.exports = {
         }
 
         return response;
-    }
+    },
+    /**
+    * Returns dynamic date for copyright footer element
+    */
+    currentYear() {
+        const today = new Date();
+        return today.getFullYear();
+    } 
 };
