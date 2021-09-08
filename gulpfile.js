@@ -6,10 +6,9 @@
 const {gulp, src, dest, parallel, watch} = require('gulp');
 
 // Require gulp-sass to process Sass using Gulp and store it in a variable.
-const sassProcessor = require('gulp-sass');
+// Explicitly set the compiler by passing it into the function call (new as of version 5)
+const sassProcessor = require('gulp-sass')(require('sass'));
 
-// Require sass and set the sass.compiler property so Gulp uses sass instead of the default node-sass. This is an option/preference for future-proofing.
-sassProcessor.compiler = require('sass');
 
 // This is a function I have called makeCSS.
 const makeCSS = () => {
