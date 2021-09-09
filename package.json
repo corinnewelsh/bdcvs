@@ -4,6 +4,7 @@
   "description": "BDCVS 11ty website development",
   "main": ".eleventy.js",
   "scripts": {
+    "build": "gulp && eleventy",
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\""
   },
   "keywords": [],
