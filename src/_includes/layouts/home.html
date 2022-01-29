@@ -1,13 +1,13 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<section class="section px-6">
+<section class="section px-6-desktop">
     <h1 class="is-size-1 has-text-danger">{{ title }}</h1>
     <div class="columns py-6 is-8 is-variable">
         <div class="column is-three-quarters">
             <div class="columns is-6 is-variable is-multiline">
                 {% for news in collections.news %}
-                <div class="column is-half">
+                <div class="column is-one-third">
                     <div class="content">
                         <div class="card">
                             <div class="card-image">
