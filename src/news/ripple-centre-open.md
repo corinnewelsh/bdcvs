@@ -6,7 +6,7 @@ tags: 'news'
 order: 2
 ---
 
-The Ripple Centre is open and taking bookings. Contact Mala Alina to make a booking or find out more. You are welcome to visit to look at the space we available, the rooms and facilities.
+The Ripple Centre is open and taking bookings. Contact Mala Alina to make a booking or find out more. You are welcome to visit to look at the space we have available, the rooms and facilities.
 
 To talk about renting office space contact Chris Downham.
 
