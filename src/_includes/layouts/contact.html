@@ -1,10 +1,50 @@
 {% extends "layouts/base.html" %}
-
 {% set pageHeaderTitle = title %}
 {% set pageHeaderSummary = content %}
 
 {% block content %}
-    <article>
-        {% include "partials/page-header.html" %}
-    </article>
+
+
+<section class="section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-8 is-vertical is-parent">
+                <div class="tile is-child box">
+                    <h2 class="title">Opening Hours</h2>
+                    <div class="content">
+                        <p class="pb-2">The Ripple Centre reception is open Monday to Friday 9am to 5pm.</p>
+                        <p>Phone: <strong>020 8532 7300</strong></p>
+                        <p>Email: <strong>reception@bdcvs.org.uk</strong></p>
+                        <p>Address: <strong>Ripple Centre, 121&ndash;125 Ripple Road, Barking, Essex IG11 7FN</strong></p>
+                    </div>
+                </div>
+                <div class="tile is-child box">
+                    <h2 class="title">How to find us</h2>
+                    <div class="content">
+                        <p>The nearest station is Barking, which is served by London Underground (District and Hammersmith &amp; City lines), London Overground (trains to/from Gospel Oak) and National Rail (c2c trains to/from London Fenchurch Street).</p>
+                        <p>We are less than 500 metres from Barking Station. From the station turn right. When you get to the crossroads, turn left onto Ripple Road.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <iframe allowfullscreen="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4963.561473838333!2d0.07832263089969313!3d51.535581336824286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMyJzA4LjEiTiAwwrAwNCc1Ny43IkU!5e0!3m2!1sen!2suk!4v1538231661548" style="border:0" width="100%" height="500" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h3 class="title is-4">Talk to a member of the team</h3>
+                    <div class="content">
+                        <p>See <a href="/about/#staff-team">About us</a> for core staff details, roles and responsibilities. You can get in touch with any of us directly.</p>
+                        <p>Our staff email address format is: <strong>firstname.surname@bdcvs.org.uk</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 {% endblock %}

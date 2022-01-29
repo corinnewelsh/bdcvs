@@ -1,7 +1,6 @@
 ---
-title: 'Contact Us'
+title: 'Contact us'
 layout: 'layouts/contact.html'
 permalink: '/contact/index.html'
 ---
 
-This is our Contact page with all the details.
