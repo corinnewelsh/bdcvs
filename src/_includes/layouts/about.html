@@ -1,11 +1,74 @@
 {% extends "layouts/base.html" %}
-
 {% set pageHeaderTitle = title %}
 {% set pageHeaderSummary = content %}
 
 {% block content %}
-    <article>
-        {% include "partials/page-header.html" %}
-    </article>
+
+
+<section class="section">
+    <p class="content">
+    Founded in 1943, Barking &amp; Dagenham Council for Voluntary Service (BDCVS) supports the voluntary and community sector in the borough. We publish news and information about events, activities, and development opportunities. Through local, regional and national links we facilitate voice, representation and advocacy. We lead and participate in programmes to promote local groups and their work. In 2011, BDCVS moved into the Ripple Centre in Barking taking on the community building&rsquo;s lease and management. The Ripple Centre has office and meeting space for local organisations. BDCVS is run by a small staff team governed by a board of trustees.
+    </p>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="title has-text-primary has-text-centered">Our local and regional role</h2>
+        <iframe src="https://player.vimeo.com/video/633117912?h=74c9309be8" width="100%" height="360" allowfullscreen></iframe>
+    </div>
+</section>
+    
+    
+<section id="staff-team" class="section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-8 is-parent">
+                <div class="tile is-child notification is-info is-light">
+                    <h2 class="title">Staff team</h2>
+                    <div class="content">
+                        <ul>
+                            <li>Chris Downham</li>
+                            <li>Mala Alina</li>
+                            <li>Corinne Welsh</li>
+                            <li>Ioannis Mathioudakis</li>
+                        </ul>
+                    </div>
+                    <h3 class="subtitle">Email us</h3>
+                    <p class="content">Our staff email address format is: <strong>firstname.surname@bdcvs.org.uk</strong></p>
+                    <h3 class="subtitle">Ripple Centre staff</h3>
+                    <p class="content">The Ripple Centre is maintained by our Caretakers and supported by our Reception Volunteers.</p>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child notification is-link is-light">
+                    <h2 class="title">Trustees</h2>
+                    <div class="content">
+                        <ul>
+                            <li>Pip Salvador-Jones (Chair)</li>
+                            <li>Nighat Bhola</li>
+                            <li>Syed Ghani</li>
+                            <li>Sharon Thomas</li>
+                        </ul>
+                    </div>
+                    <h3 class="subtitle">Advisors</h3>
+                    <div class="content">
+                        <ul>
+                            <li>Keith Smith (Localities, Disability Equality)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <img src="../../images/living_wage_employer_101x80_padding15.png" alt="Living Wage Employer logo" />
+    <img src="../../images/fundraising_regulator_badge_187x80_padding15.png" alt="Fundraising Regulator Registered logo" />
+    <img src="../../images/disability_confident_166x80_padding15.png" alt="Disability Confident Committed logo" />
+</section>
+    
 
 {% endblock %}
